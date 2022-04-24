@@ -14,5 +14,10 @@ def games_list():
     return render_template('games-list.html')
 
 
+@app.route('/photogrpahy')
+def photography():
+    return render_template('photography.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
