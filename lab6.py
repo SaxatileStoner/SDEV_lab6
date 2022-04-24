@@ -1,3 +1,9 @@
+"""Main python to run flask website
+SDEV 300 - Lab 6
+@author Christopher Stoner
+
+TODO Grammer and spelling checks for html files
+"""
 from datetime import datetime
 from flask import Flask, render_template, url_for
 
