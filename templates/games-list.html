@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+<!--Block Head-->
+{% block head %}
+
+{% endblock head %}
+
+<!--Block Body-->
+{% block body %}
+<div class="content">
+    <h1>Games List</h1>
+    <p>A continued list of games relating to computer science in some way</p>
+    
+    <!--Games involving terminal use / programming-->
+    <h2>CompSci Gameplay</h2>
+    <p>Gameplay involves terminal use and/or programming to progress</p>
+    <ol class="game-list" id="gameplay">
+        <li><a href="http://duskers.misfits-attic.com/" target="_blank">Duskers</a></li>
+        <div class="game-description">
+            <p>"In Duskers you pilot drones into derelict spaceships to find the means to survive and piece together how the universe became a giant graveyard." - Duskers Website</p>
+        </div>
+        <li>Bitburner <a href="https://github.com/danielyxie/bitburner" target="_blank">(github source)</a>, <a href="https://danielyxie.github.io/bitburner/" target="_blank">(github.io)</a></li>
+        <div class="game-description">
+            <p>"Welcome to Bitburner, a cyberpunk-themed incremental RPG! The game takes place in a
+                 dark, dystopian future... The year is 2077..."
+                - Bitburner Tutorial Dialog Box</p>
+
+        </div>
+    </ol>
+
+    <!--Games that are technical marvels for what they are-->
+    <h2>Technical Achievement</h2>
+    <p>Gameplay may be barebones or simple, but the technical work is jawdropping.</p>
+    <ol class="game-list" id="technical">
+        <li><a href="http://www.bay12games.com/dwarves/" target="_blank">Dwarf Fortress</a></li>
+    </ol>
+</div>
+
+<a href="{{ url_for('index')}}">Back...</a>
+{% endblock body %}

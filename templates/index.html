@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+<!-- block head -->
+{% block head %} {% endblock head %}
+
+<!-- block body -->
+{% block body %}
+<div class="content">
+	<div class="container">
+		<h1>Hello World!</h1>
+		<!--Need to add access date/time with python library-->
+		<p>This is my Week 6 Lab Project for SDEV 300</p>
+		<p>Date/Time of Access: {{current_date_time}}</p>
+	</div>
+
+	<div class="container">
+		<h2>About Me</h2>
+		<p>
+			Here are just a few things I wish to share about myself, click the links to
+			learn more
+		</p>
+	</div>
+
+	<div class="container">
+
+		<h3>CompSci</h3>
+		<div id="compsci-description">
+			<!--Computer Science Beginning Interests, external links to games, and game list-->
+			<p>
+				My interest in computer science started when I built my first computer.
+			Learning about the hardware of a computer system only allured me further
+			to what lead underneath in terms of software.
+		</p>
+		<p>
+			What compelled me at a young age to want to take on the task of building a
+			computer? Well, I owe a lot of my computer science intrests to a very
+			popular game at the time called:
+			<a href="https://www.minecraft.net/en-us" target="_blank">Minecraft</a>
+		</p>
+		<p>
+			I know it sounds silly, but a simple game about building anything with
+			blocks compelled me to build a computer to play the game about building
+			anything; a little funny to think of. At the time, it was a PC only title
+			with it being in beta. So, it was my only option, and it didn't need to be
+			the most powerful computer either, minecraft can be run on most things in
+			general (, the beauty of the Java language it was originally written in).
+		</p>
+		
+		<p>
+			Here are a few of my other favorite games that relate to programming or
+			computer science in some way. Whether the game itself has gameplay
+			elements relating to computer science and programming, or, the way they
+			were programmed is something to admire from a technical standpoint:
+		</p>
+    </div>
+		<ul id="compsci-games-ul">
+			<li>
+				<a href="http://duskers.misfits-attic.com" target="_blank">Duskers</a>
+			</li>
+			<li>
+				<a href="http://www.bay12games.com/dwarves/" target="_blank"
+                >Dwarf Fortress</a
+				>
+			</li>
+			<li>
+				<a href="https://github.com/danielyxie/bitburner" target="_blank"
+                >Bitburner (github source)</a
+				>
+			</li>
+			<li><a href="{{ url_for('games_list')}}">More...</a></li>
+		</ul>
+</div>
+	<h3>Photography</h3>
+	<!--Photography Interest, link to photography page-->
+</div>
+{% endblock body %}

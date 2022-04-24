@@ -1,0 +1,21 @@
+html{
+    background-color: black;
+    color: aliceblue;
+}
+
+body{
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.content{
+    margin: 5%;
+}
+
+.container{
+    padding-top: 15px;
+}
+
+.container li:not(:last-child){
+    margin-bottom: 6px;
+}
