@@ -8,39 +8,47 @@
 <!--Block Body-->
 {% block body %}
 <div class="content">
-    <h1>Games List</h1>
-    <p>A continued list of games relating to computer science in some way</p>
+    <div class="containter">
+        <h1>Games List</h1>
+        <p>A continued list of games relating to computer science in some way</p>
+    </div>
     
     <!--Games involving terminal use / programming-->
-    <h2>CompSci Gameplay</h2>
-    <p>Gameplay involves terminal use and/or programming to progress</p>
-    <ol class="game-list" id="gameplay">
-        <li><a href="http://duskers.misfits-attic.com/" target="_blank">Duskers</a></li>
-        <div class="game-description">
-            <p>"In Duskers you pilot drones into derelict spaceships to find the means to survive
-                and piece together how the universe became a giant graveyard." 
-                - <em>Duskers Website</em></p>
-        </div>
-        <li>Bitburner <a href="https://github.com/danielyxie/bitburner" target="_blank">(github source)</a>, <a href="https://danielyxie.github.io/bitburner/" target="_blank">(github.io)</a></li>
-        <div class="game-description">
-            <p>"Welcome to Bitburner, a cyberpunk-themed incremental RPG! The game takes place in a
-                 dark, dystopian future... The year is 2077..."
-                - <em>Bitburner Tutorial Dialog Box</em></p>
-
-        </div>
-    </ol>
+    <div class="container">
+        <h2>CompSci Gameplay</h2>
+        <p>Gameplay involves terminal use and/or programming to progress</p>
+        <ol class="game-list" id="gameplay">
+            <li><a href="http://duskers.misfits-attic.com/" target="_blank">Duskers</a></li>
+            <div class="game-description">
+                <p>"In Duskers you pilot drones into derelict spaceships to find the means to survive
+                    and piece together how the universe became a giant graveyard." 
+                    - <em>Duskers Website</em></p>
+            </div>
+            <li>Bitburner <a href="https://github.com/danielyxie/bitburner" target="_blank">(github source)</a>, <a href="https://danielyxie.github.io/bitburner/" target="_blank">(github.io)</a></li>
+            <div class="game-description">
+                <p>"Welcome to Bitburner, a cyberpunk-themed incremental RPG! The game takes place in a
+                     dark, dystopian future... The year is 2077..."
+                    - <em>Bitburner Tutorial Dialog Box</em></p>
+    
+            </div>
+        </ol>
+    </div>
 
     <!--Games that are technical marvels for what they are-->
-    <h2>Technical Achievement</h2>
-    <p>Gameplay may be barebones or simple, but the technical work is amazing.</p>
-    <ol class="game-list" id="technical">
-        <li><a href="http://www.bay12games.com/dwarves/" target="_blank">Dwarf Fortress</a></li>
-        <p>"construction and management simulation and roguelike indie video game created by Bay 12 
-            Games. Available as freeware and in development since 2002, its first alpha version was 
-            released in 2006 and it received attention for being a two-member project surviving solely 
-            on donations." - <em><a href="https://en.wikipedia.org/wiki/Dwarf_Fortress" target="_blank">Dwarf Fortress Wiki</a></em></p>
-    </ol>
+    <div class="container">
+        <h2>Technical Achievement</h2>
+        <p>Gameplay may be barebones or simple, but the technical work is amazing.</p>
+        <ol class="game-list" id="technical">
+            <li><a href="http://www.bay12games.com/dwarves/" target="_blank">Dwarf Fortress</a></li>
+            <p>"construction and management simulation and roguelike indie video game created by Bay 12 
+                Games. Available as freeware and in development since 2002, its first alpha version was 
+                released in 2006 and it received attention for being a two-member project surviving solely 
+                on donations." - <em><a href="https://en.wikipedia.org/wiki/Dwarf_Fortress" target="_blank">Dwarf Fortress Wiki</a></em></p>
+        </ol>
+    </div>
 </div>
 
-<a href="{{ url_for('index')}}">Back...</a>
+<div class="container">
+    <a href="{{ url_for('index')}}">Back...</a>
+</div>
 {% endblock body %}
