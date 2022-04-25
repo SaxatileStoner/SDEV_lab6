@@ -2,7 +2,9 @@
 SDEV 300 - Lab 6
 @author Christopher Stoner
 
+TODO Final Touches
 TODO Grammer and spelling checks for html files
+TODO Documentation document
 """
 from datetime import datetime
 from flask import Flask, render_template, url_for
