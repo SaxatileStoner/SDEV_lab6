@@ -8,6 +8,27 @@ body{
     font-family: sans-serif;
 }
 
+a{
+    color: aquamarine;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: darkslategray;
+    cursor: pointer;
+}
+
+a:visited{
+    color: aquamarine;
+    text-decoration: none;
+}
+
+em#current-date-time{
+    font-style: normal;
+    font-size: large;
+    color: rgb(216, 181, 172);
+}
+
 .content{
     margin: 5%;
 }
