@@ -2,7 +2,7 @@
 
 <!-- block head -->
 {% block head %}
-<title>Lab6/Index</title>
+<title>lab6/index.html</title>
 {% endblock head %}
 
 <!-- block body -->
@@ -20,7 +20,7 @@
 		<h2>About Me</h2>
 		<p>
 			Here are just a few things I wish to share about myself, click the links to
-			learn more
+			learn more!
 		</p>
 	</div>
 
@@ -29,60 +29,67 @@
 		<h3>CompSci</h3>
 		<div id="compsci-description">
 			<!--Computer Science Beginning Interests, external links to games, and game list-->
-			<p>
-				My interest in computer science started when I built my first computer.
+		<p>
+			My interest in computer science started when I built my first computer.
 			Learning about the hardware of a computer system only allured me further
-			to what lead underneath in terms of software.
+			to the side of software underneath that uses the hardware.
 		</p>
 		<p>
-			What compelled me at a young age to want to take on the task of building a
+			What compelled me to want to take on the task of building a
 			computer? Well, I owe a lot of my computer science intrests to a very
 			popular game at the time called:
 			<a href="https://www.minecraft.net/en-us" target="_blank">Minecraft</a>
 		</p>
 		<p>
-			I know it sounds silly, but a simple game about building anything with
-			blocks compelled me to build a computer to play the game about building
-			anything; a little funny to think of. At the time, it was a PC only title
-			with it being in beta. So, it was my only option, and it didn't need to be
+			I know it sounds silly, but a simple game about building anything 
+			compelled me to build a computer to play the game about building
+			anything; a little funny to think of. At the time, it was a PC only game
+			with it being in early beta. So, it was my only option, and it didn't need to be
 			the most powerful computer either, minecraft can be run on most things in
 			general (, the beauty of the Java language it was originally written in).
 		</p>
-		
 		<p>
 			Here are a few of my other favorite games that relate to programming or
 			computer science in some way. Whether the game itself has gameplay
 			elements relating to computer science and programming, or, the way they
 			were programmed is something to admire from a technical standpoint:
 		</p>
-    </div>
 		<ul id="compsci-games-ul">
 			<li>
-				<a href="http://duskers.misfits-attic.com" target="_blank">Duskers</a>
+				<a href="http://duskers.misfits-attic.com" target="_blank">
+					Duskers
+				</a>
 			</li>
 			<li>
-				<a href="http://www.bay12games.com/dwarves/" target="_blank"
-                >Dwarf Fortress</a
-				>
+				<a href="http://www.bay12games.com/dwarves/" target="_blank">
+					Dwarf Fortress
+				</a>
 			</li>
 			<li>
-				<a href="https://github.com/danielyxie/bitburner" target="_blank"
-                >Bitburner (github source)</a
-				>
+				<a href="https://github.com/danielyxie/bitburner" target="_blank">
+					Bitburner (github source)
+				</a>
 			</li>
 			<li><a href="{{ url_for('games_list')}}">More...</a></li>
 		</ul>
-</div>
-<div class="container">
-	<h3>Photography</h3>
-	<!--Photography Interest, link to photography page-->
-	<p>My interest in photography is something on the side I like to do. 
-		I enjoyed the pictures I took on my phone at first. I noticed the 
-		effort I enjoyed putting in and seeing the finished product of my work.
-		I don't do photography as much as I used too with trying to practice
-		 programming taking up a lot of my time.
-	</p>
-	<p>Here is a page containing some of the images I have taken: <a href="{{url_for('photography')}}">Photography Page</a> </p>
-</div>
+	</div>
+	<div class="container">
+		<h3>Photography</h3>
+		<!--Photography Interest, link to photography page-->
+		<p> 
+			My interest in photography is something on the side I like to do. 
+			I enjoyed the pictures I took on my phone at first, then I noticed the 
+			effort I enjoyed putting into each photo and being able to share my work visually. 
+			I love programming and computer science, but trying to share my work with others 
+			that may not understand always feels a little disheartening. 
+		</p>
+		<p>
+			With this artform, I can show something that people can see and understand 
+			what they're looking at. All without others needing to understanding the digital 
+			encoding behind the image that occurs from a digital camera. I don't do photography 
+			as much as I used too with trying to practice programming taking up a lot of my time.
+		</p>
+		<p>Here is a page containing some of the images I have taken: <a href="{{url_for('photography')}}">Photography Page</a> </p>
+	</div>
 </div>
 {% endblock body %}

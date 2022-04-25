@@ -2,7 +2,6 @@
 SDEV 300 - Lab 6
 @author Christopher Stoner
 
-TODO Final Touches
 TODO Grammer and spelling checks for html files
 TODO Documentation document
 """
